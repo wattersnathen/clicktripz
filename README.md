@@ -17,3 +17,9 @@
 * Well documented API
 * Familiarity
 * Comes with its own design model around page objects - one less item to think about during new framework construction
+
+
+# To Do
+* Add Dockerfile plus instructions to run
+* Figure out how to default the allure IP to `localhost`
+* Eliminate or reduce hard pauses
