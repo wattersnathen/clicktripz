@@ -35,7 +35,7 @@ const commands = {
                 let updatedLocator = locators.advertiserTab.locator.replace('{0}', index + 1);
                 self.api.click(updatedLocator);
 
-                // TODO: replace with better wait option
+                // TODO: replace with better wait option, some universal way of waiting for partner pages to load
                 self.api.pause(9000);
 
                 self.api.getAttribute(updatedLocator, 'data-tab-advertiser-name', function(advertiserName) {

@@ -26,11 +26,11 @@ describe('ClickTripz Test Suite', function() {
         // collect tab data, place screenshots in the 'hotelCityWide' directory
         on.ExitUnitWindow().collectTabInfo('hotelCityWide');
 
-        browser.pause(5000);
         client.start(done);
     });
 
-    it.only('Flights', function(done) {
+    it('Flights', function(done) {
+        // search for flights initial steps
         on.Flights()
             .navigateToPage()
             .updateFromAirport('DEN')
@@ -42,14 +42,14 @@ describe('ClickTripz Test Suite', function() {
             .switchToExitUnitWindow()
             .captureScreenshot('./screenshots/flights/postSwitchingToExitUnitWindow.png');
         
+        // handle initial loading of the exit unit window
         on.ExitUnitWindow()
             .clickShowMeTheFirstDealButton()
             .maximizeWindow()
             .captureScreenshot('./screenshots/flights/postClickingShowMeTheFirstDeal.png');
 
+        // collect tab data, place screenshots in the 'flights' directory
         on.ExitUnitWindow().collectTabInfo('flights');
-
-        browser.pause(5000);
 
         client.start(done);
     });
