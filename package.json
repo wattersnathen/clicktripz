@@ -4,11 +4,13 @@
   "description": "UI Framework for ClickTripz web application",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/ --recursive --retries 2"
+    "test": "mocha test/*.spec.js --retries 0 --reporter mocha-allure-reporter",
+    "generateReport": "$(npm bin)/allure generate allure-results/ --clean && $(npm bin)/allure open allure-report"
   },
   "author": "Nathen Watters <wattersnathen@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "allure-commandline": "^2.5.0",
     "chromedriver": "^2.39.0",
     "mocha": "^5.2.0",
     "mocha-allure-reporter": "^1.4.0",
