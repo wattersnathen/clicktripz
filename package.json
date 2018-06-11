@@ -1,0 +1,18 @@
+{
+  "name": "clicktripz-ui-automation",
+  "version": "0.0.1",
+  "description": "UI Framework for ClickTripz web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/ --recursive --retries 2"
+  },
+  "author": "Nathen Watters <wattersnathen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": "^2.39.0",
+    "mocha": "^5.2.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "moment": "^2.22.2",
+    "nightwatch": "^0.9.21"
+  }
+}

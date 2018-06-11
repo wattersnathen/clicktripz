@@ -1,0 +1,11 @@
+{
+    "showMeTheFirstDealButton": {
+        "locatorType": "xpath",
+        "locator": "//*[contains(text(), 'Show me the first deal!')]"
+    },
+
+    "advertiserTab": {
+        "locatorType": "css",
+        "locator": "a[data-tab-position='{0}']"
+    }
+}

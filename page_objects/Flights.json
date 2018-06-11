@@ -1,0 +1,44 @@
+{
+    "compareOptionsContainer": {
+        "locatorType": "css",
+        "locator": "#ct-anchor",
+        "groups": [ "requiredForPage" ]
+    },
+
+    "providerOption": {
+        "locatorType": "css",
+        "locator": "#a_provider_1",
+        "groups": [ "requiredForPage" ]
+    },
+
+    "searchFlightsButton": {
+        "locatorType": "css",
+        "locator": "#search-button",
+        "groups": [ "requiredForPage" ]
+    },
+
+    "fromAirport": {
+        "locatorType": "css",
+        "locator": "#city1"
+    },
+
+    "toAirport": {
+        "locatorType": "css",
+        "locator": "#city2"
+    },
+
+    "departureDate": {
+        "locatorType": "css",
+        "locator": "#date1"
+    },
+
+    "returnDate": {
+        "locatorType": "css",
+        "locator": "#date2"
+    },
+
+    "numberOfTravelersSelect": {
+        "locatorType": "css",
+        "locator": "#travelers"
+    }
+}

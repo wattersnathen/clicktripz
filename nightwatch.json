@@ -1,0 +1,38 @@
+{
+  "src_folders": [ "test" ],
+  "output_folder": "reports",
+  "custom_commands_path": "commands",
+  "custom_assertions_path": "assertions",
+  "page_objects_path": "page_objects",
+  "silent": true,
+
+  "selenium": {
+    "start_process": false,
+    "port": 4444,
+    "host": "localhost",
+    "cli_args": {
+      "webdriver.chrome.driver": "$(npm bin)/chromedriver",
+      "webdriver.edge.driver": "$(npm bin)/edgedriver"
+    }
+  },
+
+  "test_settings": {
+    "default": {
+      "selenium_port": 9515,
+      "selenium_host": "localhost",
+      "default_path_prefix": "",
+
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "chromeOptions": {
+          "args": [
+            "--no-sandbox",
+            "--silent"
+          ]
+        },
+        "acceptSslCerts": true
+      }
+    }
+  }
+}

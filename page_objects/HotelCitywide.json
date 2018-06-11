@@ -1,0 +1,55 @@
+{
+  "hotelCitywideActiveNavTab": {
+    "locatorType": "css",
+    "locator": "li[class*='active'] > a[href*='test.php']",
+    "groups": [ "requiredForPage" ]
+  },
+
+  "hotelCitywideSearchButton": {
+    "locatorType": "css",
+    "locator": "#search-button",
+    "groups": [ "requiredForPage" ]
+  },
+
+  "providersContainer": {
+    "locatorType": "css",
+    "locator": "#ctAnchor",
+    "groups": [ "requiredForPage" ]
+  },
+
+  "firstProvider": {
+    "locatorType": "css",
+    "locator": "#a_provider_1",
+    "groups": [ "requiredForPage" ]
+  },
+
+  "cityInputField": {
+    "locatorType": "css",
+    "locator": "input[name='city']"
+  },
+
+  "checkInDateField": {
+    "locatorType": "css",
+    "locator": "#date1"
+  },
+
+  "checkOutDateField": {
+    "locatorType": "css",
+    "locator": "#date2"
+  },
+
+  "numberOfGuestsSelect": {
+    "locatorType": "css",
+    "locator": "#guests"
+  },
+
+  "numberOfRoomsSelect": {
+    "locatorType": "css",
+    "locator": "#rooms"
+  },
+
+  "flightsFormTab": {
+    "locatorType": "xpath",
+    "locator": "//a[contains(text(), 'Flights')]"
+  }
+}
