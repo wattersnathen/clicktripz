@@ -14,4 +14,6 @@
 * Recently the pop under started showing a different window being opened: `pseudo_window_redirect.php?...` is now in the URL, at least on the last few local runs
 
 # Choosing Nightwatch.js
-* 
+* Well documented API
+* Familiarity
+* Comes with its own design model around page objects - one less item to think about during new framework construction
