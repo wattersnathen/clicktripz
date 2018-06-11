@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*.spec.js --retries 0 --reporter mocha-allure-reporter",
-    "generateReport": "$(npm bin)/allure generate allure-results/ --clean && $(npm bin)/allure open allure-report"
+    "generateReport": "$(npm bin)/allure generate allure-results/ --clean && $(npm bin)/allure open allure-report --port 9999"
   },
+  "repository": "https://github.com/wattersnathen/clicktripz.git",
   "author": "Nathen Watters <wattersnathen@gmail.com>",
   "license": "MIT",
   "dependencies": {
