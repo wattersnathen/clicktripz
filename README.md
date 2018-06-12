@@ -13,7 +13,7 @@
 * `docker run -p 9999:9999 -d wattersnathen/clicktripz`
 * Give it a couple minutes then visit `localhost:9999` or view the Docker logs and wait for: `Server started at <http://<some ip>:9999/>. Press <Ctrl+C> to exit
 ` to show up in the log
-* Note
+* Note that running via Docker ended up with more timeout issues than local runs
 
 # Notes
 * Recently the pop under started showing a different window being opened: `pseudo_window_redirect.php?...` is now in the URL, at least on the last few local runs
