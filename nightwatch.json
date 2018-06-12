@@ -18,7 +18,7 @@
 
   "test_settings": {
     "default": {
-      "selenium_port": 9515,
+      "selenium_port": 4444,
       "selenium_host": "localhost",
       "default_path_prefix": "",
 
@@ -27,7 +27,6 @@
         "javascriptEnabled": true,
         "chromeOptions": {
           "args": [
-            "--no-sandbox",
             "--silent"
           ]
         },

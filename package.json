@@ -4,8 +4,9 @@
   "description": "UI Framework for ClickTripz web application",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/*.spec.js --retries 0 --reporter mocha-allure-reporter",
-    "generateReport": "$(npm bin)/allure generate allure-results/ --clean && $(npm bin)/allure open allure-report --port 9999"
+    "test": "$(npm bin)/mocha test/*.spec.js --retries 0 --reporter mocha-allure-reporter",
+    "generateReport": "$(npm bin)/allure generate allure-results/ --clean && $(npm bin)/allure open allure-report --port 9999",
+    "startSeleniumServer": "node ./scripts/startSeleniumServer &"
   },
   "repository": "https://github.com/wattersnathen/clicktripz.git",
   "author": "Nathen Watters <wattersnathen@gmail.com>",
