@@ -1,17 +1,16 @@
 require('./nightwatch_setup');
 
-// to switch back to standalone chrome driver
-// const chromedriver = require('chromedriver');
+const chromedriver = require('chromedriver');
 
-// before(function(done) {
-//     chromedriver.start(['--url-base=/wd/hub', '--port=4444', '--headless', '--disable-gpu', '--no-sandbox']);
-//     done();
-// });
+before(function(done) {
+    chromedriver.start(['--url-base=/wd/hub', '--port=4444', '--headless', '--disable-gpu', '--no-sandbox']);
+    done();
+});
 
-// after(function(done) {
-//     chromedriver.stop();
-//     done();
-// });
+after(function(done) {
+    chromedriver.stop();
+    done();
+});
 
 beforeEach(function() {
     console.log(`~~~~~Starting test: ${this.currentTest.fullTitle()}`);
